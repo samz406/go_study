@@ -93,8 +93,14 @@ func main() {
 	array14 := array13[2:]
 	fmt.Println(array14)
 
-	//切片
+	//切片 初始化
 	var slice1 = make([]int, 4, 8)
-	fmt.Printf("长度 %d，容量 %d", len(slice1), cap(slice1))
+	fmt.Println("长度", len(slice1), "容量", cap(slice1))
+
+	var slices2 = []string{"java", "go", "js", "python"}
+
+	slices2 = append(slices2, "C++")
+
+	fmt.Println(slices2)
 
 }
